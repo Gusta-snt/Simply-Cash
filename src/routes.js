@@ -133,6 +133,8 @@ router.route("/transfer")
             return res.status(400).json({"success": false, "message": "Transferência não realizada!"})
         }
 
+        // -- CRIAR LOGICA DE NOTIFICAÇÃO -- 
+
         return res.status(200).json({"success": true, "message": "Transferência realizada!"})
     })
     .all((req, res) => {
